@@ -1,0 +1,85 @@
+{
+    "mappings": {
+      "properties": {
+        "deputes": {
+          "type": "nested",
+          "properties": {
+            "depute": {
+              "properties": {
+                "id": { "type": "integer" },
+                "nom": { "type": "text", "fields": { "keyword": { "type": "keyword" } } },
+                "nom_de_famille": { "type": "text", "fields": { "keyword": { "type": "keyword" } } },
+                "prenom": { "type": "text", "fields": { "keyword": { "type": "keyword" } } },
+                "sexe": { "type": "keyword" },
+                "date_naissance": { "type": "date", "format": "yyyy-MM-dd" },
+                "lieu_naissance": { "type": "text" },
+                "num_deptmt": { "type": "keyword" },
+                "nom_circo": { "type": "text" },
+                "num_circo": { "type": "integer" },
+                "mandat_debut": { "type": "date", "format": "yyyy-MM-dd" },
+                "mandat_fin": { "type": "date", "format": "yyyy-MM-dd" },
+                "ancien_depute": { "type": "boolean" },
+                "groupe_sigle": { "type": "keyword" },
+                "parti_ratt_financier": { "type": "keyword" },
+                "sites_web": {
+                  "type": "nested",
+                  "properties": {
+                    "site": { "type": "keyword" }
+                  }
+                },
+                "emails": {
+                  "type": "nested",
+                  "properties": {
+                    "email": { "type": "keyword" }
+                  }
+                },
+                "anciens_mandats": {
+                  "type": "nested",
+                  "properties": {
+                    "mandat": { "type": "text" }
+                  }
+                },
+                "profession": { "type": "keyword" },
+                "place_en_hemicycle": { "type": "integer" },
+                "url_an": { "type": "keyword" },
+                "id_an": { "type": "keyword" },
+                "slug": { "type": "keyword" },
+                "url_nosdeputes": { "type": "keyword" },
+                "url_nosdeputes_api": { "type": "keyword" },
+                "twitter": { "type": "keyword" },
+                "nb_mandats": { "type": "integer" },
+                "nb_mois": { "type": "integer" },
+                "semaines_presence": { "type": "integer" },
+                "semaines_presence_moyenne_mensuelle": { "type": "float" },
+                "commission_presences": { "type": "integer" },
+                "commission_presences_moyenne_mensuelle": { "type": "float" },
+                "commission_interventions": { "type": "integer" },
+                "commission_interventions_moyenne_mensuelle": { "type": "float" },
+                "hemicycle_interventions": { "type": "integer" },
+                "hemicycle_interventions_moyenne_mensuelle": { "type": "float" },
+                "hemicycle_interventions_courtes": { "type": "integer" },
+                "hemicycle_interventions_courtes_moyenne_mensuelle": { "type": "float" },
+                "amendements_proposes": { "type": "integer" },
+                "amendements_proposes_moyenne_mensuelle": { "type": "float" },
+                "amendements_signes": { "type": "integer" },
+                "amendements_signes_moyenne_mensuelle": { "type": "float" },
+                "amendements_adoptes": { "type": "integer" },
+                "amendements_adoptes_moyenne_mensuelle": { "type": "float" },
+                "rapports": { "type": "integer" },
+                "rapports_moyenne_mensuelle": { "type": "float" },
+                "propositions_ecrites": { "type": "integer" },
+                "propositions_ecrites_moyenne_mensuelle": { "type": "float" },
+                "propositions_signees": { "type": "integer" },
+                "propositions_signees_moyenne_mensuelle": { "type": "float" },
+                "questions_ecrites": { "type": "integer" },
+                "questions_ecrites_moyenne_mensuelle": { "type": "float" },
+                "questions_orales": { "type": "integer" },
+                "questions_orales_moyenne_mensuelle": { "type": "float" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
