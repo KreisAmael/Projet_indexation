@@ -1,4 +1,4 @@
-from kafka import KafkaProducer
+from kafka_test import KafkaProducer
 import json
 import time
 
